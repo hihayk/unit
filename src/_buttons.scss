@@ -1,0 +1,18 @@
+.button {
+  border: 0;
+  background-color: $orange-lighter;
+  color: inherit;
+  padding: $u 2*$u;
+  display: inline-block;
+  cursor: pointer;
+
+  &:focus {
+  	outline: 0;
+  	box-shadow: 0 0 8px 0 $orange-light;
+  }
+}
+
+.button-primary {
+  background-color: $orange;
+  color: #fff;
+}

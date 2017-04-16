@@ -1,0 +1,42 @@
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-group-icon {
+  width: 2*$u;
+  height: 2*$u;
+  border: 1px solid $orange-light;
+  position: relative;
+  margin-right: $u;
+}
+
+.checkbox-group-input {
+  opacity: 0;
+  position: absolute;
+  
+  &:checked + .checkbox-group-icon {
+    background-color: $orange;
+    border: 0;
+
+    &:after {
+      content: '';
+      width: 6px;
+      height: 10px;
+      box-shadow: 2px 2px white;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 5px;
+      top: -1px;
+    }
+  }
+  &:focus + .checkbox-group-icon {
+    border-color: $orange;
+    box-shadow: 0 0 8px 0 $orange-light;
+  }
+  &:active + .checkbox-group-icon {
+    border-color: $orange;
+    box-shadow: 0 0 8px 0 $orange-light;
+  }
+}

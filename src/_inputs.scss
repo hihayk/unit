@@ -1,0 +1,48 @@
+$u: 8px;
+
+input, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+.input-groups {
+  .input-group {
+    margin-bottom: 2*$u;
+  }
+}
+.input-label {
+  display: block;
+  margin-bottom: $u;
+}
+.input-field {
+  height: 5*$u;
+  padding: 0 1.5*$u;
+  width: 32*$u;
+  border: 1px solid $orange-light;
+  margin: 0;
+  
+  &:focus {
+    border-color: $orange;
+    outline: none;
+  }
+}
+.input-field-small {
+  width: 16*$u;
+}
+.input-field-large {
+  width: 48*$u;
+}
+.input-field-full {
+  width: 100%;
+}
+
+.input-helper {
+  opacity: .5;
+  margin-top: $u;
+}
+
+.input-field-textarea {
+  padding-top: $u;
+  padding-bottom: $u;
+  min-height: 11*$u;
+}
