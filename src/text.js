@@ -20,8 +20,6 @@ const FONT_STYLES = {
   `
 }
 
-const Text = styled.span`
-  ${props => FONT_STYLES[props.size]}
-`
+const Text = styled.span`${props => FONT_STYLES[props.size]};`
 
 export default Text

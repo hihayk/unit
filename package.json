@@ -18,9 +18,13 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
+    "prettier-standard": "^6.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "storybook-addon-jsx": "^4.1.1"
+    "storybook-addon-jsx": "^4.1.1",
+    "validate-commit-msg": "^2.13.0"
   },
   "babel": {
     "presets": [
@@ -37,7 +41,22 @@
       ]
     ]
   },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "lint:js",
+        "git add"
+      ],
+      "stories/**/*.js": [
+        "lint:js",
+        "git add"
+      ]
+    }
+  },
   "scripts": {
+    "lint:js": "prettier-standard",
+    "precommit": "lint-staged",
+    "commitmsg": "validate-commit-msg",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   }
