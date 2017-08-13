@@ -1,7 +1,4 @@
-$u: 8px;
-
 input, textarea {
-  font-family: inherit;
   color: inherit;
 }
 
@@ -10,10 +7,12 @@ input, textarea {
     margin-bottom: 2*$u;
   }
 }
+
 .input-label {
   display: block;
   margin-bottom: $u;
 }
+
 .input-field {
   height: 5*$u;
   padding: 0 1.5*$u;
@@ -26,12 +25,15 @@ input, textarea {
     outline: none;
   }
 }
+
 .input-field-small {
   width: 16*$u;
 }
+
 .input-field-large {
   width: 48*$u;
 }
+
 .input-field-full {
   width: 100%;
 }

@@ -4,29 +4,29 @@
 }
 
 body {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.75*$u;
+  line-height: 3*$u;
   font-family: 'Karla', sans-serif;
   color: $orange;
 }
 
 .size-1 {
-  font-size: 24px;
+  font-size: 3*$u;
   line-height: 4*$u;
 }
 
 .size-2 {
-  font-size: 32px;
+  font-size: 4*$u;
   line-height: 5*$u;
 }
 
 .size-3 {
-  font-size: 40px;
+  font-size: 5*$u;
   line-height: 6*$u;
 }
 
 .caps {
-  font-size: 12px;
+  font-size: 1.5*$u;
   line-height: 2*$u;
   text-transform: uppercase;
   letter-spacing: 1px;
